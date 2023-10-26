@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , />
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8c0e7df4fa.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            I'm <span>Kimberly Mwachilungo.</span> <br />A computer science
+            major.<br />
+            Developing and Programming expert
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------about---------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Image3.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I, as a computer scientist, have nurtured a foundation of
+              education, honed through countless hours of hard work. My
+              extensive skill set encompasses diverse programming languages and
+              technologies, facilitating effective problem-solving and
+              adaptability. Guided by core principles, I prioritize efficiency,
+              security, and ethical conduct in my work. My character reflects
+              patience, resilience, and an insatiable curiosity, driving me to
+              continually explore new technologies and ideas.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">Experince</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Full Stack Developer</span><br />Designing Web/App
+                  interfaces
+                </li>
+                <li><span>Web development</span><br />Web App Development</li>
+                <li>
+                  <span>App and System development</span><br />Building
+                  Applications and Systems
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-2023: Full Stack Developer</span><br />Designing
+                  Web/App and maintaining them.
+                </li>
+                <li>
+                  <span>2021-2023: Web development</span><br />Web App
+                  Development
+                </li>
+                <li>
+                  <span>2022- 2023: App and System development</span
+                  ><br />Building Applications and Systems
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2025</span><br />Bachelor in Computer science
+                </li>
+                <li>
+                  <span>2016-2020</span><br />High School(KCSE Certificate)
+                </li>
+                <li>
+                  <span>2008-2016</span><br />Middle School(KCPE Certificate)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------services------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              In the realm of web design and maintenance,<br />
+              I excel. My skills in front-end and <br />
+              back-end development enable me to craft<br />
+              user-friendly and visually appealing websites.<br />
+              I'm adept at optimizing performance,<br />
+              ensuring seamless functionality, and staying current <br />
+              with the latest design trends and technologies.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Application and System Design</h2>
+            <p>
+              In Application and System Design, my expertise shines.<br />
+              I possess a profound understanding of<br />
+              architectural principles, crafting efficient and <br />robust
+              software solutions.<br />
+              My skills encompass database design, scalability,<br />
+              and security, ensuring that the systems I create<br />
+              are not only functional but also<br />
+              maintainable and adaptable to evolving needs.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Full Stack Programmer</h2>
+            <p>
+              As a Full Stack Programmer, Developer, and Designer,<br />
+              I have a holistic command of the software development process.<br />
+              My proficiency spans front-end and back-end development,<br />
+              UI/UX design, and database management.<br />
+              This comprehensive skill set allows me to create seamless,
+              <br />end-to-end solutions, ensuring exceptional<br />
+              user experiences and system performance.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>System and Media Applications</h3>
+              <p>
+                I participated in Designing media applications for mobile
+                devices, optimizing video streaming, audio playback, and
+                intuitive interfaces, enhancing user experiences with efficient
+                system performance.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Web development Applications</h3>
+              <p>
+                I've crafted specialized web development apps tailored for iOS,
+                streamlining website creation and maintenance, delivering
+                seamless functionality and an intuitive user interface.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Company ecommerce System</h3>
+              <p>
+                I've engineered a robust eCommerce system for our mobile
+                platform, enabling efficient transactions, inventory management,
+                and an engaging user experience while adhering to industry
+                security standards.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+      </div>
+    </div>
+    <!---------------------------contact--------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >kimberlymwachilungo@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>+254115279061</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Resume.docx" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Kimberly.<i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbznHd8u3MUDGqZQ-d3cNvz47mOe2nfaYmcqlT15xTG9Cposh3VyD7c11NpwgsEb64zx/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
